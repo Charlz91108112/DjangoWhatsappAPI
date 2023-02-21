@@ -3,6 +3,9 @@ import requests
 from .models import UserProfile, Subscription
 from django.contrib.auth.models import User
 from .openai_API import generate_response
+import asyncio
+
+loop = asyncio.new_event_loop()
 
 
 def sendWhatsAppMessage(phoneNumber, message):
@@ -28,7 +31,7 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
             return
         else:
             if text.startswith('#'):
-                message = generate_response(text.split('#')[1])
+                message = loop.run_in_executor(None, generate_response, text.split('#')[1]) #generate_response(text.split('#')[1])
                 #message = "Some problem with OPENAI"
                 if message:
                     subscribe.free_prompt_count += 1
