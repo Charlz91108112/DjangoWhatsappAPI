@@ -23,7 +23,7 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
         #sendWhatsAppMessage(fromID, "Checking if the user already exixt!")
         subscribe = Subscription.objects.get(profile__phone_number=fromID)
         if subscribe.free_prompt_count > 50:
-            message = "Sorry, you can only send 10 free prompts in your free quota.\n\nKind Regards.\nWhatsAppGPT"
+            message = "Sorry, you can only send 50 free prompts in your free quota.\n\nKind Regards.\nWhatsAppGPT"
             sendWhatsAppMessage(fromID, message)
             return
         else:
