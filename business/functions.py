@@ -20,10 +20,17 @@ def sendWhatsAppMessage(phoneNumber, message):
     response = requests.post(settings.WHATSAPP_URL, headers=headers, json=payload)
     return response.json()
 
+def process_text_async(text, subscribe, fromID):
+    message = generate_response(text.split('#')[1])
+    if message:
+        subscribe.free_prompt_count += 1
+        subscribe.save()
+    sendWhatsAppMessage(fromID, message)
+
 def handleWhatsappReply(phoneID, profileName, fromID, text):
     # Check if the user already exist?
     try:
-        #sendWhatsAppMessage(fromID, "Checking if the user already exixt!")
+        #sendWhatsAppMessage(fromID, "Checking if the user already exist!")
         subscribe = Subscription.objects.get(profile__phone_number=fromID)
         if subscribe.free_prompt_count > 50:
             message = "Sorry, you can only send 50 free prompts in your free quota.\n\nKind Regards.\nWhatsAppGPT"
@@ -31,14 +38,15 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
             return
         else:
             if text.startswith('#'):
-                message = loop.run_in_executor(None, generate_response, text.split('#')[1]) #generate_response(text.split('#')[1])
+                # message = loop.run_in_executor(None, generate_response, text.split('#')[1]) #generate_response(text.split('#')[1])
                 #message = "Some problem with OPENAI"
-                if message:
-                    subscribe.free_prompt_count += 1
-                    subscribe.save()
+                # if message:
+                #     subscribe.free_prompt_count += 1
+                #     subscribe.save()
+                loop.run_in_executor(None, process_text_async, text, subscribe, fromID)
             else:
                 message = "Sorry the format of the question is not proper and I am not able to answer it.\n\nKind Regards.\nWhatsAppGPT"
-            sendWhatsAppMessage(fromID, message)
+                sendWhatsAppMessage(fromID, message)
 
     except Exception as e:
         #sendWhatsAppMessage(fromID, f"Issue with top function -- {e}")
