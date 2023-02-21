@@ -7,7 +7,7 @@ def generate_response(prompt):
     try:
         response = openai.Completion.create(
         model="text-davinci-003",
-        prompt=f"Understand the following prompt thoroughly: {prompt}. Now act as an expert and provide the comprehensive answer to it in less than 150 words. Make sure to add wit to make it look like humanly as possible. Be wise and add humour to everything. Make evrything sound awesome.",
+        prompt=f"Understand the following prompt thoroughly: {prompt}. Now act as an expert and provide the comprehensive answer to it in less than 150 words. Make sure to add wit to make it look like humanly as possible. Be wise and add humour to everything. Make evrything sound awesome. If someone has asked for a coding problem then make sure to provide the code.",
         temperature=0.9,
         max_tokens=3200,
         top_p=1,
