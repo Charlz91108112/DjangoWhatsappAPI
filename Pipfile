@@ -10,6 +10,7 @@ gunicorn = "*"
 requests = "*"
 openai = "*"
 uuid = "*"
+whitenoise = "*"
 
 [dev-packages]
 
