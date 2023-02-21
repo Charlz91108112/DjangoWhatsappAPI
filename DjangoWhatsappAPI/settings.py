@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'zdlifhdhdtjhtfjnj7y86dun7t86876876761f#%5416tjstj5###$Gtgtwhthvrtj@#%^511687'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost','0.0.0.0', '172.31.15.102', 'api.marketeerfront.com', '3.224.88.183']
 
