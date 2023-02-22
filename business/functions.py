@@ -27,7 +27,7 @@ def sendWhatsAppImage(phoneNumber, link):
         "recipient_type": "individual",
         "to": phoneNumber,
         "type": "image",
-        "link": {"body": link}
+        "image": {"link": link}
     }
     response = requests.post(settings.WHATSAPP_URL, headers=headers, json=payload)
     return response.json()
@@ -46,7 +46,7 @@ def process_image_async(text, subscribe, fromID):
         subscribe.free_image_count += 1
         subscribe.history_image_prompt += f"{text}.\n"
         subscribe.save()
-    sendWhatsAppImage(fromID, str(message))
+    sendWhatsAppImage(fromID, message)
 
 def handleWhatsappReply(phoneID, profileName, fromID, text):
     # Check if the user already exist?
