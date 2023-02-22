@@ -62,7 +62,7 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
                                                     phone_number=fromID,
                                                     phone_ID=phoneID,)
                 subscribe = Subscription.objects.create(profile=user_profile)
-                message = (f'Hello {profileName}!\n\n.' + 
+                message = (f'Hello {profileName}!\n\n' + 
                             'I am WhatsApp GPT which help you write better and faster.' + 
                             'Just ask me to frame or write anything for you I will try my best.\n\n' + 
                             'In order to get started use this format to ask me anythin:\n\n' + 
