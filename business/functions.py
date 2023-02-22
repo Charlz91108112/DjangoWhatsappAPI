@@ -2,7 +2,7 @@ from django.conf import settings
 import requests
 from .models import UserProfile, Subscription
 from django.contrib.auth.models import User
-from .openai_API import generate_response
+from .openai_API import generate_response, generate_image
 import asyncio
 
 loop = asyncio.new_event_loop()
@@ -20,25 +20,57 @@ def sendWhatsAppMessage(phoneNumber, message):
     response = requests.post(settings.WHATSAPP_URL, headers=headers, json=payload)
     return response.json()
 
+def sendWhatsAppImage(phoneNumber, link):
+    headers = {"Authorization": settings.WHATSAPP_TOKEN}
+    payload = {
+        "messaging_product": "whatsapp",
+        "recipient_type": "individual",
+        "to": phoneNumber,
+        "type": "image",
+        "link": {"body": link}
+    }
+    response = requests.post(settings.WHATSAPP_URL, headers=headers, json=payload)
+    return response.json()
+
+def process_text_async(text, subscribe, fromID):
+    message = generate_response(text.split('#')[1])
+    if message:
+        subscribe.free_prompt_count += 1
+        subscribe.history_text_prompt += f"{text}.\n"
+        subscribe.save()
+    sendWhatsAppMessage(fromID, message)
+
+def process_image_async(text, subscribe, fromID):
+    message = generate_image(text.split('##')[1])
+    if "https" in message:
+        subscribe.free_image_count += 1
+        subscribe.history_image_prompt += f"{text}.\n"
+        subscribe.save()
+    sendWhatsAppImage(fromID, message)
+
 def handleWhatsappReply(phoneID, profileName, fromID, text):
     # Check if the user already exist?
     try:
-        #sendWhatsAppMessage(fromID, "Checking if the user already exixt!")
+        #sendWhatsAppMessage(fromID, "Checking if the user already exist!")
         subscribe = Subscription.objects.get(profile__phone_number=fromID)
         if subscribe.free_prompt_count > 50:
             message = "Sorry, you can only send 50 free prompts in your free quota.\n\nKind Regards.\nWhatsAppGPT"
             sendWhatsAppMessage(fromID, message)
             return
+        elif subscribe.free_image_count > 20:
+            message = "Sorry, you can only send 20 free images in your free quota.\n\nKind Regards.\nWhatsAppGPT"
+            sendWhatsAppMessage(fromID, message)
+            return
+        # Write a script to count a char in a string
+        
         else:
-            if text.startswith('#'):
-                message = loop.run_in_executor(None, generate_response, text.split('#')[1]) #generate_response(text.split('#')[1])
-                #message = "Some problem with OPENAI"
-                if message:
-                    subscribe.free_prompt_count += 1
-                    subscribe.save()
+            if text.startswith('#') and text.count('#') == 1:
+                loop.run_in_executor(None, process_text_async, text, subscribe, fromID)
+            elif text.startswith('##') and text.count('##') == 1:
+                loop.run_in_executor(None, process_image_async, text, subscribe, fromID)
             else:
                 message = "Sorry the format of the question is not proper and I am not able to answer it.\n\nKind Regards.\nWhatsAppGPT"
-            sendWhatsAppMessage(fromID, message)
+                sendWhatsAppMessage(fromID, message)
 
     except Exception as e:
         #sendWhatsAppMessage(fromID, f"Issue with top function -- {e}")
@@ -48,7 +80,7 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
                 user_profile = UserProfile.objects.get(user=user)
             else:
                 user = User.objects.create_user(username=fromID, 
-                                                password=phoneID, 
+                                                password=phoneID,
                                                 )
                 user_profile = UserProfile.objects.create(user=user,
                                                     phone_number=fromID,

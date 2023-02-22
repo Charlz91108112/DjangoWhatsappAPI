@@ -18,3 +18,17 @@ def generate_response(prompt):
         return response['choices'][0]['text']
     except Exception as e:
         return 'Sorry, I lost connection with my server. Please try again.'
+
+def generate_image(prompt):
+    try:
+        response = openai.Image.create(
+        prompt=f"{prompt}",
+        n=1,
+        size="1024x1024"
+        )
+        return response['data'][0]['url']
+    except Exception as e:
+        if "request was rejected" in str(e):
+            return 'Please do not violate the terms and conditions or else the account will be suspended.'
+        else:
+            return 'Sorry, I lost connection with my server. Please try again.'
