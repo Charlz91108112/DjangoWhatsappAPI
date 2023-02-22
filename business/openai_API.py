@@ -26,7 +26,7 @@ def generate_image(prompt):
         n=1,
         size="1024x1024"
         )
-        return response['data'][0]['url']
+        return str(response['data'][0]['url'])
     except Exception as e:
         if "request was rejected" in str(e):
             return 'Please do not violate the terms and conditions or else the account will be suspended.'
