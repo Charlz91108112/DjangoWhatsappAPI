@@ -25,6 +25,7 @@ class UserProfile(models.Model):
 
 class Subscription(models.Model):
     profile = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
+    profileName = models.CharField(max_length=100, blank=False, default="")
     subscription_type = models.CharField(max_length=20, blank=True, default="Free")
     subscription_status = models.CharField(max_length=20, blank=True, default="Active")
     subscription_start_date = models.DateTimeField(auto_now_add=True, null=True)
