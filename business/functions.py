@@ -46,7 +46,9 @@ def process_image_async(text, subscribe, fromID):
         subscribe.free_image_count += 1
         subscribe.history_image_prompt += f"{text}.\n"
         subscribe.save()
-    sendWhatsAppImage(fromID, message)
+        sendWhatsAppImage(fromID, message)
+    else:
+        sendWhatsAppMessage(fromID, message)
 
 def handleWhatsappReply(phoneID, profileName, fromID, text):
     # Check if the user already exist?
