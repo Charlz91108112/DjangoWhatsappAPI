@@ -49,6 +49,8 @@ def process_image_async(text, subscribe, fromID):
         sendWhatsAppImage(fromID, message)
     else:
         sendWhatsAppMessage(fromID, message)
+    
+
 
 def handleWhatsappReply(phoneID, profileName, fromID, text):
     # Check if the user already exist?
@@ -63,8 +65,6 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
             message = "Sorry, you can only send 20 free images in your free quota.\n\nKind Regards.\nWhatsAppGPT"
             sendWhatsAppMessage(fromID, message)
             return
-        # Write a script to count a char in a string
-        
         else:
             if text.startswith('#') and text.count('#') == 1:
                 loop.run_in_executor(None, process_text_async, text, subscribe, fromID)
@@ -87,7 +87,8 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
                 user_profile = UserProfile.objects.create(user=user,
                                                     phone_number=fromID,
                                                     phone_ID=phoneID,)
-                subscribe = Subscription.objects.create(profile=user_profile)
+                subscribe = Subscription.objects.create(profile=user_profile,
+                                                        profileName=profileName,)
                 message = (f'Hello {profileName}!\n\n' + 
                             'I am WhatsApp GPT which help you write better and faster.' + 
                             'Just ask me to frame or write anything for you I will try my best.\n\n' + 
