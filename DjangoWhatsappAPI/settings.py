@@ -143,3 +143,5 @@ WHATSAPP_TOKEN = 'Bearer EAAIFotLuvroBAIatdqwIZCFXG6aBMCxB7dK58n8HeLmrHHQzZAFGEk
 
 # OpenAi Configuration
 OPENAI_API_KEY = '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'
+INTERNET_SEARCH_URL = 'https://phind.com/api/search'
+INTERNET_SCRAPE_URL = 'https://phind.com/api/tldr'

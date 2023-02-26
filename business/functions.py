@@ -2,7 +2,7 @@ from django.conf import settings
 import requests
 from .models import UserProfile, Subscription
 from django.contrib.auth.models import User
-from .openai_API import generate_response, generate_image
+from .openai_API import generate_response, generate_image, search_GPT
 import asyncio
 
 loop = asyncio.new_event_loop()
@@ -49,6 +49,14 @@ def process_image_async(text, subscribe, fromID):
         sendWhatsAppImage(fromID, message)
     else:
         sendWhatsAppMessage(fromID, message)
+
+def process_text_internet_async(text, subscribe, fromID):
+    message, urls = generate_response(text.split('@')[1])
+    if message:
+        subscribe.free_prompt_count += 1
+        subscribe.history_text_prompt += f"{text}.\n"
+        subscribe.save()
+    sendWhatsAppMessage(fromID, f"{message}\n\n{urls}")
     
 
 
@@ -70,6 +78,8 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
                 loop.run_in_executor(None, process_text_async, text, subscribe, fromID)
             elif text.startswith('##') and text.count('##') == 1:
                 loop.run_in_executor(None, process_image_async, text, subscribe, fromID)
+            elif text.startswith('@') and text.count('@') == 1:
+                loop.run_in_executor(None, process_text_internet_async, text, subscribe, fromID)
             else:
                 message = "Sorry the format of the question is not proper and I am not able to answer it.\n\nKind Regards.\nWhatsAppGPT"
                 sendWhatsAppMessage(fromID, message)
