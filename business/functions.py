@@ -51,7 +51,7 @@ def process_image_async(text, subscribe, fromID):
         sendWhatsAppMessage(fromID, message)
 
 def process_text_internet_async(text, subscribe, fromID):
-    message, urls = generate_response(text.split('@')[1])
+    message, urls = search_GPT(text.split('@')[1])
     if message:
         subscribe.free_prompt_count += 1
         subscribe.history_text_prompt += f"{text}.\n"
