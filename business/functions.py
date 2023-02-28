@@ -65,24 +65,42 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
     try:
         #sendWhatsAppMessage(fromID, "Checking if the user already exist!")
         subscribe = Subscription.objects.get(profile__phone_number=fromID)
-        if subscribe.free_prompt_count > 50:
-            message = "Sorry, you can only send 50 free prompts in your free quota.\n\nKind Regards.\nWhatsAppGPT"
-            sendWhatsAppMessage(fromID, message)
-            return
-        elif subscribe.free_image_count > 20:
-            message = "Sorry, you can only send 20 free images in your free quota.\n\nKind Regards.\nWhatsAppGPT"
-            sendWhatsAppMessage(fromID, message)
-            return
-        else:
-            if text.startswith('#') and text.count('#') == 1:
-                loop.run_in_executor(None, process_text_async, text, subscribe, fromID)
-            elif text.startswith('##') and text.count('##') == 1:
-                loop.run_in_executor(None, process_image_async, text, subscribe, fromID)
-            elif text.startswith('@') and text.count('@') == 1:
-                loop.run_in_executor(None, process_text_internet_async, text, subscribe, fromID)
-            else:
-                message = "Sorry the format of the question is not proper and I am not able to answer it.\n\nKind Regards.\nWhatsAppGPT"
+        if text.startswith('#') and text.count('#') == 1:
+            if subscribe.free_prompt_count > 50:
+                message = "Sorry, you can only send 50 free prompts in your free quota.\n\nKind Regards.\nWhatsAppGPT"
                 sendWhatsAppMessage(fromID, message)
+                return
+            else:
+                loop.run_in_executor(None, process_text_async, text, subscribe, fromID)
+        elif text.startswith('##') and text.count('##') == 1:
+            if subscribe.free_image_count > 20:
+                message = "Sorry, you can only send 20 free images in your free quota.\n\nKind Regards.\nWhatsAppGPT"
+                sendWhatsAppMessage(fromID, message)
+                return
+            else:
+                loop.run_in_executor(None, process_image_async, text, subscribe, fromID)
+        elif text.startswith('@') and text.count('@') == 1:
+            if subscribe.free_prompt_count > 50:
+                message = "Sorry, you can only send 50 free prompts in your free quota.\n\nKind Regards.\nWhatsAppGPT"
+                sendWhatsAppMessage(fromID, message)
+                return
+            else:
+                loop.run_in_executor(None, process_text_internet_async, text, subscribe, fromID)
+        else:
+            if text=='2611':
+                if subscribe.free_prompt_count > 50:
+                    subscribe.free_prompt_count = 0
+                    subscribe.save()
+                    message = "Your prompt generating limit has been reset!"
+                elif subscribe.free_image_count >20:
+                    subscribe.free_image_count = 0
+                    subscribe.save()
+                    message = "Your image generating limit has been reset!"
+                message += "Thank you for your insightful responses!.\n\nKind Regards.\nWhatsAppGPT"
+                sendWhatsAppMessage(fromID, message)
+                return
+            message = "Sorry the format of the question is not proper and I am not able to answer it.\n\nKind Regards.\nWhatsAppGPT"
+            sendWhatsAppMessage(fromID, message)
 
     except Exception as e:
         #sendWhatsAppMessage(fromID, f"Issue with top function -- {e}")
