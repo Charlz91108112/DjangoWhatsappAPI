@@ -76,6 +76,7 @@ def search_GPT(search_query):
     message = ' '.join(message)
     final_message = generate_response(f"Explain this message in a much better and comprehensive manner: {message} with considering the following context: {search_query}.")
     url = [(((i.split('"url": ')[1]).split('}'))[0].replace('"','')) for index,i in enumerate(prompt) if index%2==1 and (((i.split('"url": ')[1]).split('}'))[0].replace('"',''))!='']
+    url = list(set(url))
     url = '\n'.join(url)
 
     return final_message, url
