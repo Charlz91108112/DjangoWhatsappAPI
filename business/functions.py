@@ -99,6 +99,17 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
                 message += "Thank you for your insightful responses!.\n\nKind Regards.\nWhatsAppGPT"
                 sendWhatsAppMessage(fromID, message)
                 return
+            elif text.lower()=='quota':
+                message = f"You have {50-subscribe.free_prompt_count} prompts left!\n" + \
+                          f"You have {20-subscribe.free_image_count} images left!"  
+                sendWhatsAppMessage(fromID, message)
+                return
+            elif text.lower()=='help':
+                message = "Here is the list of commands that you can use with WhatsappGPT:\n\n" + \
+                          "*#prompt* --> use 1 hash model to craft almost everything. For eg. # Write me a song about my wife who is really sweet and caring!\n" + \
+                          "*##prompt* -->  Use 2 hash model to create image about anything you like. Simply descibe the scene and I will try to get you the image.\n" + \
+                          "*@prompt* --> Everything under 1 hash model with internet connection to fecth very recent data.\n" + \
+                          "*quota* --> will tell your remaining free balance" + "\n\nKind Regards.\nWhatsAppGPT"
             message = "Sorry the format of the question is not proper and I am not able to answer it.\n\nKind Regards.\nWhatsAppGPT"
             sendWhatsAppMessage(fromID, message)
 
