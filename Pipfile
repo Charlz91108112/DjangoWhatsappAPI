@@ -12,6 +12,7 @@ openai = "*"
 uuid = "*"
 whitenoise = "*"
 pillow = "*"
+grabzit = "*"
 
 [dev-packages]
 
