@@ -99,7 +99,8 @@ def generate_response(prompt):
             ]
         )
         return response["choices"][0]["message"]["content"]
-    except Exception:
+    except Exception as e:
+        print(e)
         return "I apologize for the inconveniences. I have lost the connection with the server! Please try again after some time.\n\nKind Regards\nWhatsappGPT"
 
 # def generate_response(prompt):
