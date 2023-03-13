@@ -71,11 +71,14 @@ def search_GPT(search_query):
                             json=json_data)
     text = response.text
 
-    prompt = text.split('{"sentence":')
-    message = [(i.split(', "sentence_source_text":')[0]).replace('"','') for index,i in enumerate(prompt) if index%2==1]
+    prompt = text.split('data:')
+    message = [i.strip() for i in prompt]
     message = ' '.join(message)
-    final_message = generate_response(f"Explain this message in a much better and comprehensive manner: {message} with considering the following context: {search_query}.")
-    url = [(((i.split('"url": ')[1]).split('}'))[0].replace('"','')) for index,i in enumerate(prompt) if index%2==1 and (((i.split('"url": ')[1]).split('}'))[0].replace('"',''))!='']
+    if message.strip():
+        final_message = generate_response(f"Explain this message in a much better and comprehensive manner: {message} with considering the following context: {search_query}.")
+    else:
+        final_message = "I apologize for the inconnveniences. I have lost the connection with the server! Please try again after some time!"
+    url = [i['url'] for i in raw_data['processedBingResults']['webPages']['value']]
     url = list(set(url))
     url = '\n'.join(url)
 
