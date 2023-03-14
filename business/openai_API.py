@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import openai
+import base64
 from django.conf import settings
 openai.api_key = settings.OPENAI_API_KEY
 
@@ -23,6 +24,19 @@ headers = {
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-origin',
+}
+
+headers_dalle = {
+    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0',
+    'Accept': '*/*',
+    'Accept-Language': 'en-US,en;q=0.5',
+    'Referer': 'https://xipher.space/',
+    'Content-Type': 'application/json',
+    'Origin': 'https://xipher.space',
+    'Connection': 'keep-alive',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'cross-site',
 }
 
 def search_GPT(search_query):
@@ -120,15 +134,25 @@ def generate_response(prompt):
 #         return 'Sorry, I lost connection with my server. Please try again.\n\nKind Regards\nWhatsappGPT'
 
 def generate_image(prompt):
+    json_data_dalle = {'prompt': prompt}
     try:
-        response = openai.Image.create(
-        prompt=f"{prompt}",
-        n=1,
-        size="1024x1024"
-        )
-        return str(response['data'][0]['url'])
+        response = requests.post('https://xipher.onrender.com/api/v1/dalle', headers=headers_dalle, json=json_data_dalle)
+        data = json.loads(response.text)
+        return base64.urlsafe_b64decode((data['photo']))
     except Exception as e:
         if "request was rejected" in str(e):
             return 'Please do not violate the terms and conditions or else the account will be suspended.'
-        else:
-            return 'Sorry, I lost connection with my server. Please try again.'
+        try:
+            print("using paid model")
+            response = openai.Image.create(
+            prompt=f"{prompt}",
+            n=1,
+            size="1024x1024"
+            )
+            return str(response['data'][0]['url'])
+        except Exception as e:
+            return (
+                'Please do not violate the terms and conditions or else the account will be suspended.'
+                if "request was rejected" in str(e)
+                else 'Sorry, I lost connection with my server. Please try again.'
+            )
