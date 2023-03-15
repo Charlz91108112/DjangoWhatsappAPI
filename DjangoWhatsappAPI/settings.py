@@ -139,9 +139,16 @@ DEFAULT_FROM_EMAIL = 'hi@email.com'
 
 # WhatsApp Configuration
 WHATSAPP_URL = 'https://graph.facebook.com/v15.0/115728961432587/messages'
-WHATSAPP_TOKEN = 'Bearer EAAIFotLuvroBABCI7Kr62xD3XuZA3foS4PWV49h1s0ZADFD7BMab2yVBZCAlLnPduMJOpIDhvcMo1PqU4N5nIWseKRmDoeVMFLkAl1zMtkIeBSM2NMjp9dc1sMQMkeBY8xwgQM3RVMSpKrTCABPZBdk77yGM4v4W916mMpOhMZA1PqxIJzk74nh7O09XW5xue96RZAZBvjumwZDZD'
+WHATSAPP_TOKEN = 'Bearer EAAIFotLuvroBAAPGmZAclR5znVlZAgTq32XTRuMvOBZAPHs0cH4n3fNHZCSHXm2ht6urXH53kGViBQQKXEZA635UxvmYBLX9Uf6MflRZBldJSPAZBcDCcoY6fYyp5dZBZA4JAyU2RZA9dIYJN0q8eimukSuPCZC7rsQgCdR8nzZAB1L4ctPMZCHHKjiJvEEuOvUYTvbEFGr2pQxnqZBQZDZD'
+
+# Image Upload API
+IMAGE_UPLOAD_URL = 'https://api.imgbb.com/1/upload'
+IMAGE_UPLOAD_KEY = 'db5a24b27b1a0fc40fe30487c6d37564'
 
 # OpenAi Configuration
 OPENAI_API_KEY = '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'
 INTERNET_SEARCH_URL = 'https://phind.com/api/search'
 INTERNET_SCRAPE_URL = 'https://phind.com/api/tldr'
+
+# Dalle API
+DALLE_API = 'https://xipher.onrender.com/api/v1/dalle'
