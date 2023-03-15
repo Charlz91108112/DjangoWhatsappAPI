@@ -42,10 +42,11 @@ def process_text_async(text, subscribe, fromID):
 
 def process_image_async(text, subscribe, fromID):
     ver,message = generate_image(text.split('##')[1])
-    if "https" in message and ver=='paid':
-        subscribe.free_image_count += 1
-        subscribe.history_image_prompt += f"{text}.\n"
-        subscribe.save()
+    if "https" in message:
+        if ver=='paid':
+            subscribe.free_image_count += 1
+            subscribe.history_image_prompt += f"{text}.\n"
+            subscribe.save()
         sendWhatsAppImage(fromID, message)
     else:
         sendWhatsAppMessage(fromID, message)
