@@ -41,8 +41,8 @@ def process_text_async(text, subscribe, fromID):
     sendWhatsAppMessage(fromID, message)
 
 def process_image_async(text, subscribe, fromID):
-    message = generate_image(text.split('##')[1])
-    if "https" in message:
+    ver,message = generate_image(text.split('##')[1])
+    if "https" in message and ver=='paid':
         subscribe.free_image_count += 1
         subscribe.history_image_prompt += f"{text}.\n"
         subscribe.save()
@@ -136,8 +136,14 @@ def handleWhatsappReply(phoneID, profileName, fromID, text):
                             'In order to get started use this format to ask me anythin:\n\n' + 
                             '#Write me an email for the leave that I can send to HR\n\n' + 
                             'Kind Regards\nWhatsappGPT')
+                message1 = "Here is the list of commands that you can use with WhatsappGPT:\n\n" + \
+                          "*#prompt* ```--> use 1 hash model to craft almost everything.```\n_For eg. # Write me a song about my wife who is really sweet and caring!_\n\n" + \
+                          "*##prompt* ```-->  Use 2 hash model to create image about anything you like. Simply descibe the scene and I will try to get you the image.```\n\n" + \
+                          "*@prompt* ```--> Everything under 1 hash model with internet connection to fecth very recent data.```\n\n" + \
+                          "*quota* ```--> will tell your remaining free balance```" + "\n\n```Kind Regards.```\n```WhatsAppGPT```"
 
                 sendWhatsAppMessage(fromID, message)
+                sendWhatsAppMessage(fromID, message1)
             #subscribe = Subscription.objects.create(profile=user_profile)
         except Exception as e:
             sendWhatsAppMessage(fromID, str(e))
