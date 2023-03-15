@@ -136,20 +136,29 @@ def generate_response(prompt):
 def generate_image(prompt):
     json_data_dalle = {'prompt': prompt}
     try:
-        response = requests.post('https://xipher.onrender.com/api/v1/dalle', headers=headers_dalle, json=json_data_dalle)
+        response = requests.post(settings.DALLE_API, headers=headers_dalle, json=json_data_dalle)
         data = json.loads(response.text)
-        return base64.urlsafe_b64decode((data['photo']))
+        decoded_data = base64.urlsafe_b64decode((data['photo']))
+        my_string = base64.b64encode(decoded_data)
+        files = {
+            'image': (None, my_string),
+        }
+        params = {
+            'expiration': '60',
+            'key': settings.IMAGE_UPLOAD_KEY,
+        }
+        response = requests.post(settings.IMAGE_UPLOAD_URL, params=params, files=files)
+        return 'free',(response.json())['data']['url']
     except Exception as e:
         if "request was rejected" in str(e):
             return 'Please do not violate the terms and conditions or else the account will be suspended.'
         try:
-            print("using paid model")
             response = openai.Image.create(
             prompt=f"{prompt}",
             n=1,
             size="1024x1024"
             )
-            return str(response['data'][0]['url'])
+            return 'paid',str(response['data'][0]['url'])
         except Exception as e:
             return (
                 'Please do not violate the terms and conditions or else the account will be suspended.'
