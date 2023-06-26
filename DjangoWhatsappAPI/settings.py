@@ -9,12 +9,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'zdlifhdhdtjhtfjnj7y86dun7t86876876761f#%5416tjstj5###$Gtgtwhthvrtj@#%^511687'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','0.0.0.0', '172.31.15.102', 'api.marketeerfront.com', '3.224.88.183']
+ALLOWED_HOSTS = ['localhost','0.0.0.0', '172.31.15.102', '', '3.224.88.183']
 
 
 # Application definition
@@ -69,9 +69,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'djangowhatsappapi',
-        'USER': 'charlz',
-        'PASSWORD': 'DROW-ssap10!',
-        'HOST': 'localhost',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '',
     }
 }
@@ -130,7 +130,7 @@ EMAIL_HOST = 'email.host'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'hi@email.com'
-EMAIL_HOST_PASSWORD = 'password'
+EMAIL_HOST_PASSWORD = ''
 DEFAULT_FROM_EMAIL = 'hi@email.com'
 
 # Login details
@@ -138,17 +138,17 @@ DEFAULT_FROM_EMAIL = 'hi@email.com'
 #LOGIN_URL = 'login'
 
 # WhatsApp Configuration
-WHATSAPP_URL = 'https://graph.facebook.com/v15.0/115728961432587/messages'
-WHATSAPP_TOKEN = 'Bearer EAAIFotLuvroBAIAg4WZAjl9y6PZAfQEVJAEAmiayjK3mQ0Ig7Ys5UwgdnClYMSWLTGJ81JEi9MA97djIeYNytOz8ASv8RMQVPvMxonZCPQi5QWPpDSoHpmuenXKLhlwhidm5aO9qDNULIBlDlQ74oLiTrqim4adk8B7ZAivnhQuipLaXPZA2L4ZAF4EBlkxsUJ7HxTkHU5cwZDZD'
+WHATSAPP_URL = ''
+WHATSAPP_TOKEN = ''
 
 # Image Upload API
-IMAGE_UPLOAD_URL = 'https://api.imgbb.com/1/upload'
-IMAGE_UPLOAD_KEY = 'db5a24b27b1a0fc40fe30487c6d37564'
+IMAGE_UPLOAD_URL = ''
+IMAGE_UPLOAD_KEY = ''
 
 # OpenAi Configuration
-OPENAI_API_KEY = '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'
-INTERNET_SEARCH_URL = 'https://phind.com/api/search'
-INTERNET_SCRAPE_URL = 'https://phind.com/api/tldr'
+OPENAI_API_KEY = ''
+INTERNET_SEARCH_URL = ''
+INTERNET_SCRAPE_URL = ''
 
 # Dalle API
-DALLE_API = 'https://xipher.onrender.com/api/v1/dalle'
+DALLE_API = ''
