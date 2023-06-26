@@ -18,7 +18,7 @@ def WhatsappWebhook(request):
         challenge = request.GET.get('hub.challenge')
 
         if mode and token:
-            VERIFY_TOKEN = '72c6f220-594f-439d-99f2-3f68478aa85e'
+            VERIFY_TOKEN = ''
             if mode == 'subscribe' and token == VERIFY_TOKEN:
                 return HttpResponse(challenge, status = 200)
             else:

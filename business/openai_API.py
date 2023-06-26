@@ -6,38 +6,12 @@ import base64
 from django.conf import settings
 openai.api_key = settings.OPENAI_API_KEY
 
-cookies = {
-    '_ga': 'GA1.1.2069351461.1675500759',
-    '__cf_bm': 'tKBE1CoA6B1qnHf2RHd.ue8Gx9YhVDb.XMdrxntXKSw-1677330461-0-AXvkswhQmMCVUfe8A1InxmDdQS72RXfQxJjE2pEZ17ZPdoFd1Uhiszi3g4IZwYKs+Y5Rx6q5sQr0bmTv7aMmmQgBDmgu3xpD2YIyGM9fVEBskFAz+cs2DFrNGi6iERk4rivkFNyIrXeCumeeieDciFc=',
-    '_ga_XCLTX4ZEX8': 'GS1.1.1677328350.1.1.1677330711.26.0.0',
-    'mp_6d31cd4238973a84421371ef3929c915_mixpanel': '%7B%22distinct_id%22%3A%20%221861ba0a4d036c-0970fa526e5568-976273f-1fa400-1861ba0a4d117f%22%2C%22%24device_id%22%3A%20%221861ba0a4d036c-0970fa526e5568-976273f-1fa400-1861ba0a4d117f%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%2C%22%24search_engine%22%3A%20%22google%22%7D',
-}
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0',
-    'Accept': 'application/json',
-    'Accept-Language': 'en-US,en;q=0.5',
-    'Referer': 'https://phind.com',
-    'Content-Type': 'application/json',
-    'Origin': 'https://phind.com',
-    'Connection': 'keep-alive',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'same-origin',
-}
+cookies = {}
+headers = {}
+headers_dalle = {}
+json_data_dalle = {}
 
-headers_dalle = {
-    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0',
-    'Accept': '*/*',
-    'Accept-Language': 'en-US,en;q=0.5',
-    'Referer': 'https://xipher.space/',
-    'Content-Type': 'application/json',
-    'Origin': 'https://xipher.space',
-    'Connection': 'keep-alive',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'cross-site',
-}
 
 def search_GPT(search_query):
 
@@ -136,19 +110,7 @@ def generate_response(prompt):
 def generate_image(prompt):
     json_data_dalle = {'prompt': prompt}
     try:
-        response = requests.post(settings.DALLE_API, headers=headers_dalle, json=json_data_dalle)
-        data = json.loads(response.text)
-        decoded_data = base64.urlsafe_b64decode((data['photo']))
-        my_string = base64.b64encode(decoded_data)
-        files = {
-            'image': (None, my_string),
-        }
-        params = {
-            'expiration': '60',
-            'key': settings.IMAGE_UPLOAD_KEY,
-        }
-        response = requests.post(settings.IMAGE_UPLOAD_URL, params=params, files=files)
-        return 'free',(response.json())['data']['url']
+        return dalle_generate_image(json_data_dalle)
     except Exception as e:
         if "request was rejected" in str(e):
             return 'Please do not violate the terms and conditions or else the account will be suspended.'
@@ -165,3 +127,20 @@ def generate_image(prompt):
                 if "request was rejected" in str(e)
                 else 'Sorry, I lost connection with my server. Please try again.'
             )
+
+def dalle_generate_image(json_data_dalle):
+    response = requests.post(settings.DALLE_API, 
+                             headers=headers_dalle, 
+                             json=json_data_dalle)
+    data = json.loads(response.text)
+    decoded_data = base64.urlsafe_b64decode((data['photo']))
+    my_string = base64.b64encode(decoded_data)
+    files = {
+        'image': (None, my_string),
+    }
+    params = {
+        'expiration': '60',
+        'key': settings.IMAGE_UPLOAD_KEY,
+    }
+    response = requests.post(settings.IMAGE_UPLOAD_URL, params=params, files=files)
+    return 'free',(response.json())['data']['url']

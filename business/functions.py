@@ -41,12 +41,16 @@ def process_text_async(text, subscribe, fromID):
     sendWhatsAppMessage(fromID, message)
 
 def process_image_async(text, subscribe, fromID):
+    # Split the text into two parts and generate an image
     ver,message = generate_image(text.split('##')[1])
+     # Check if the message contains a URL
     if "https" in message:
+        # If the version is paid, increment the free image count
         if ver=='paid':
             subscribe.free_image_count += 1
             subscribe.history_image_prompt += f"{text}.\n"
             subscribe.save()
+         # Send the image or message to the user
         sendWhatsAppImage(fromID, message)
     else:
         sendWhatsAppMessage(fromID, message)
