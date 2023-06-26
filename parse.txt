@@ -1,0 +1,1460 @@
+data: {"token": "India"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " diverse"}
+
+data: {"token": " country"}
+
+data: {"token": " with"}
+
+data: {"token": " a"}
+
+data: {"token": " plethora"}
+
+data: {"token": " of"}
+
+data: {"token": " destinations"}
+
+data: {"token": " that"}
+
+data: {"token": " can"}
+
+data: {"token": " be"}
+
+data: {"token": " explored"}
+
+data: {"token": " on"}
+
+data: {"token": " a"}
+
+data: {"token": " budget"}
+
+data: {"token": "."}
+
+data: {"sentence": "India is a diverse country with a plethora of destinations that can be explored on a budget.", "sentence_source_text": "India is one of the cheapest destinations in the world to travel to.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Here"}
+
+data: {"token": " are"}
+
+data: {"token": " some"}
+
+data: {"token": " of"}
+
+data: {"token": " the"}
+
+data: {"token": " best"}
+
+data: {"token": " places"}
+
+data: {"token": " to"}
+
+data: {"token": " visit"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": " in"}
+
+data: {"token": " "}
+
+data: {"token": "202"}
+
+data: {"token": "3"}
+
+data: {"token": " with"}
+
+data: {"token": " a"}
+
+data: {"token": " budget"}
+
+data: {"token": " under"}
+
+data: {"token": " "}
+
+data: {"token": "700"}
+
+data: {"token": "0"}
+
+data: {"token": ":\n\n"}
+
+data: {"sentence": "Here are some of the best places to visit in India in 2023 with a budget under 7000:\n\n", "sentence_source_text": "Hampi, Coorg, and Ooty are some of the best places to visit in South India if you are a budget traveler.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "1"}
+
+data: {"token": "."}
+
+data: {"token": " N"}
+
+data: {"token": "ain"}
+
+data: {"token": "ital"}
+
+data: {"token": ":"}
+
+data: {"token": " N"}
+
+data: {"token": "ain"}
+
+data: {"token": "ital"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " hill"}
+
+data: {"token": " station"}
+
+data: {"token": " known"}
+
+data: {"token": " for"}
+
+data: {"token": " its"}
+
+data: {"token": " scenic"}
+
+data: {"token": " beauty"}
+
+data: {"token": " and"}
+
+data: {"token": " the"}
+
+data: {"token": " N"}
+
+data: {"token": "ain"}
+
+data: {"token": "i"}
+
+data: {"token": " Lake"}
+
+data: {"token": "."}
+
+data: {"sentence": "1. Nainital: Nainital is a hill station known for its scenic beauty and the Naini Lake.", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " an"}
+
+data: {"token": " ideal"}
+
+data: {"token": " destination"}
+
+data: {"token": " for"}
+
+data: {"token": " budget"}
+
+data: {"token": " trips"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": "."}
+
+data: {"sentence": "It is an ideal destination for budget trips in India.", "sentence_source_text": "Which are some of the offbeat destinations to plan budget trips in India?", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " The"}
+
+data: {"token": " rope"}
+
+data: {"token": "-way"}
+
+data: {"token": " to"}
+
+data: {"token": " Snow"}
+
+data: {"token": " view"}
+
+data: {"token": " to"}
+
+data: {"token": " get"}
+
+data: {"token": " a"}
+
+data: {"token": " de"}
+
+data: {"token": "k"}
+
+data: {"token": "ko"}
+
+data: {"token": " at"}
+
+data: {"token": " the"}
+
+data: {"token": " mighty"}
+
+data: {"token": " Himal"}
+
+data: {"token": "ayas"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " must"}
+
+data: {"token": "-do"}
+
+data: {"token": " here"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "The rope-way to Snow view to get a dekko at the mighty Himalayas is a must-do here.\n\n", "sentence_source_text": "The rope-way to Snow view to get a dekko at the mighty Himalayas is a must-do here.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "2"}
+
+data: {"token": "."}
+
+data: {"token": " S"}
+
+data: {"token": "ikk"}
+
+data: {"token": "im"}
+
+data: {"token": ":"}
+
+data: {"token": " S"}
+
+data: {"token": "ikk"}
+
+data: {"token": "im"}
+
+data: {"token": " is"}
+
+data: {"token": " one"}
+
+data: {"token": " of"}
+
+data: {"token": " the"}
+
+data: {"token": " lo"}
+
+data: {"token": "vel"}
+
+data: {"token": "iest"}
+
+data: {"token": " and"}
+
+data: {"token": " cheapest"}
+
+data: {"token": " holiday"}
+
+data: {"token": " destinations"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": "."}
+
+data: {"sentence": "2. Sikkim: Sikkim is one of the loveliest and cheapest holiday destinations in India.", "sentence_source_text": "Sikkim is one of the loveliest and cheapest holiday destinations in India.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " It"}
+
+data: {"token": " offers"}
+
+data: {"token": " scenic"}
+
+data: {"token": " views"}
+
+data: {"token": " of"}
+
+data: {"token": " the"}
+
+data: {"token": " Himal"}
+
+data: {"token": "ayas"}
+
+data: {"token": ","}
+
+data: {"token": " picturesque"}
+
+data: {"token": " tre"}
+
+data: {"token": "ks"}
+
+data: {"token": ","}
+
+data: {"token": " and"}
+
+data: {"token": " a"}
+
+data: {"token": " strong"}
+
+data: {"token": " Tibetan"}
+
+data: {"token": " Buddhist"}
+
+data: {"token": " culture"}
+
+data: {"token": "."}
+
+data: {"sentence": "It offers scenic views of the Himalayas, picturesque treks, and a strong Tibetan Buddhist culture.", "sentence_source_text": "Nothing beats its wonderful climate, scenic view of the Himalayas, picturesque treks, strong Tibetan Buddhist culture, and yummy local food.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Budget"}
+
+data: {"token": " hotels"}
+
+data: {"token": " are"}
+
+data: {"token": " available"}
+
+data: {"token": " at"}
+
+data: {"token": " IN"}
+
+data: {"token": "R"}
+
+data: {"token": " "}
+
+data: {"token": "600"}
+
+data: {"token": " up"}
+
+data: {"token": ","}
+
+data: {"token": " but"}
+
+data: {"token": " there"}
+
+data: {"token": " are"}
+
+data: {"token": " dorm"}
+
+data: {"token": "s"}
+
+data: {"token": " too"}
+
+data: {"token": " for"}
+
+data: {"token": " IN"}
+
+data: {"token": "R"}
+
+data: {"token": " "}
+
+data: {"token": "120"}
+
+data: {"token": " or"}
+
+data: {"token": " single"}
+
+data: {"token": " rooms"}
+
+data: {"token": " for"}
+
+data: {"token": " IN"}
+
+data: {"token": "R"}
+
+data: {"token": " "}
+
+data: {"token": "250"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "Budget hotels are available at INR 600 up, but there are dorms too for INR 120 or single rooms for INR 250.\n\n", "sentence_source_text": "Stay: Budget hotels are available at INR 600 up, but there are dorms too for INR 120 or single rooms for INR 250", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "3"}
+
+data: {"token": "."}
+
+data: {"token": " Push"}
+
+data: {"token": "kar"}
+
+data: {"token": ":"}
+
+data: {"token": " Push"}
+
+data: {"token": "kar"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " small"}
+
+data: {"token": " town"}
+
+data: {"token": " in"}
+
+data: {"token": " Rajasthan"}
+
+data: {"token": " known"}
+
+data: {"token": " for"}
+
+data: {"token": " its"}
+
+data: {"token": " holy"}
+
+data: {"token": " lake"}
+
+data: {"token": " and"}
+
+data: {"token": " the"}
+
+data: {"token": " Push"}
+
+data: {"token": "kar"}
+
+data: {"token": " Camel"}
+
+data: {"token": " Fair"}
+
+data: {"token": "."}
+
+data: {"sentence": "3. Pushkar: Pushkar is a small town in Rajasthan known for its holy lake and the Pushkar Camel Fair.", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " budget"}
+
+data: {"token": "-friendly"}
+
+data: {"token": " destination"}
+
+data: {"token": " with"}
+
+data: {"token": " plenty"}
+
+data: {"token": " of"}
+
+data: {"token": " cheap"}
+
+data: {"token": " accommodation"}
+
+data: {"token": " options"}
+
+data: {"token": " and"}
+
+data: {"token": " food"}
+
+data: {"token": " joints"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "It is a budget-friendly destination with plenty of cheap accommodation options and food joints.\n\n", "sentence_source_text": "", "url": ""}
+
+data: {"token": "4"}
+
+data: {"token": "."}
+
+data: {"token": " R"}
+
+data: {"token": "ish"}
+
+data: {"token": "ik"}
+
+data: {"token": "esh"}
+
+data: {"token": ":"}
+
+data: {"token": " R"}
+
+data: {"token": "ish"}
+
+data: {"token": "ik"}
+
+data: {"token": "esh"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " spiritual"}
+
+data: {"token": " destination"}
+
+data: {"token": " located"}
+
+data: {"token": " in"}
+
+data: {"token": " the"}
+
+data: {"token": " footh"}
+
+data: {"token": "ills"}
+
+data: {"token": " of"}
+
+data: {"token": " the"}
+
+data: {"token": " Himal"}
+
+data: {"token": "ayas"}
+
+data: {"token": "."}
+
+data: {"sentence": "4. Rishikesh: Rishikesh is a spiritual destination located in the foothills of the Himalayas.", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " known"}
+
+data: {"token": " for"}
+
+data: {"token": " its"}
+
+data: {"token": " yoga"}
+
+data: {"token": " retreat"}
+
+data: {"token": "s"}
+
+data: {"token": ","}
+
+data: {"token": " adventure"}
+
+data: {"token": " sports"}
+
+data: {"token": ","}
+
+data: {"token": " and"}
+
+data: {"token": " scenic"}
+
+data: {"token": " beauty"}
+
+data: {"token": "."}
+
+data: {"sentence": "It is known for its yoga retreats, adventure sports, and scenic beauty.", "sentence_source_text": "It is wise to travel to unexplored places and save some bucks!", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " budget"}
+
+data: {"token": "-friendly"}
+
+data: {"token": " destination"}
+
+data: {"token": " with"}
+
+data: {"token": " plenty"}
+
+data: {"token": " of"}
+
+data: {"token": " cheap"}
+
+data: {"token": " accommodation"}
+
+data: {"token": " options"}
+
+data: {"token": " and"}
+
+data: {"token": " food"}
+
+data: {"token": " joints"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "It is a budget-friendly destination with plenty of cheap accommodation options and food joints.\n\n", "sentence_source_text": "", "url": ""}
+
+data: {"token": "5"}
+
+data: {"token": "."}
+
+data: {"token": " O"}
+
+data: {"token": "ot"}
+
+data: {"token": "y"}
+
+data: {"token": ":"}
+
+data: {"token": " O"}
+
+data: {"token": "ot"}
+
+data: {"token": "y"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " hill"}
+
+data: {"token": " station"}
+
+data: {"token": " located"}
+
+data: {"token": " in"}
+
+data: {"token": " Tamil"}
+
+data: {"token": " Nadu"}
+
+data: {"token": "."}
+
+data: {"sentence": "5. Ooty: Ooty is a hill station located in Tamil Nadu.", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " known"}
+
+data: {"token": " for"}
+
+data: {"token": " its"}
+
+data: {"token": " scenic"}
+
+data: {"token": " beauty"}
+
+data: {"token": ","}
+
+data: {"token": " tea"}
+
+data: {"token": " plant"}
+
+data: {"token": "ations"}
+
+data: {"token": ","}
+
+data: {"token": " and"}
+
+data: {"token": " colonial"}
+
+data: {"token": " architecture"}
+
+data: {"token": "."}
+
+data: {"sentence": "It is known for its scenic beauty, tea plantations, and colonial architecture.", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " budget"}
+
+data: {"token": "-friendly"}
+
+data: {"token": " destination"}
+
+data: {"token": " with"}
+
+data: {"token": " plenty"}
+
+data: {"token": " of"}
+
+data: {"token": " cheap"}
+
+data: {"token": " accommodation"}
+
+data: {"token": " options"}
+
+data: {"token": " and"}
+
+data: {"token": " food"}
+
+data: {"token": " joints"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "It is a budget-friendly destination with plenty of cheap accommodation options and food joints.\n\n", "sentence_source_text": "", "url": ""}
+
+data: {"token": "6"}
+
+data: {"token": "."}
+
+data: {"token": " Hamp"}
+
+data: {"token": "i"}
+
+data: {"token": ":"}
+
+data: {"token": " Hamp"}
+
+data: {"token": "i"}
+
+data: {"token": " is"}
+
+data: {"token": " an"}
+
+data: {"token": " ancient"}
+
+data: {"token": " temple"}
+
+data: {"token": " town"}
+
+data: {"token": " located"}
+
+data: {"token": " in"}
+
+data: {"token": " Karnataka"}
+
+data: {"token": "."}
+
+data: {"sentence": "6. Hampi: Hampi is an ancient temple town located in Karnataka.", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " known"}
+
+data: {"token": " for"}
+
+data: {"token": " its"}
+
+data: {"token": " historical"}
+
+data: {"token": " significance"}
+
+data: {"token": ","}
+
+data: {"token": " ancient"}
+
+data: {"token": " ruins"}
+
+data: {"token": ","}
+
+data: {"token": " and"}
+
+data: {"token": " scenic"}
+
+data: {"token": " beauty"}
+
+data: {"token": "."}
+
+data: {"sentence": "It is known for its historical significance, ancient ruins, and scenic beauty.", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " budget"}
+
+data: {"token": "-friendly"}
+
+data: {"token": " destination"}
+
+data: {"token": " with"}
+
+data: {"token": " plenty"}
+
+data: {"token": " of"}
+
+data: {"token": " cheap"}
+
+data: {"token": " accommodation"}
+
+data: {"token": " options"}
+
+data: {"token": " and"}
+
+data: {"token": " food"}
+
+data: {"token": " joints"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "It is a budget-friendly destination with plenty of cheap accommodation options and food joints.\n\n", "sentence_source_text": "", "url": ""}
+
+data: {"token": "Here"}
+
+data: {"token": " are"}
+
+data: {"token": " some"}
+
+data: {"token": " tips"}
+
+data: {"token": " to"}
+
+data: {"token": " keep"}
+
+data: {"token": " in"}
+
+data: {"token": " mind"}
+
+data: {"token": " while"}
+
+data: {"token": " planning"}
+
+data: {"token": " budget"}
+
+data: {"token": " trips"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": ":\n\n"}
+
+data: {"sentence": "Here are some tips to keep in mind while planning budget trips in India:\n\n", "sentence_source_text": "What are some of the best tips to keep in mind while planning budget trips in India?", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "1"}
+
+data: {"token": "."}
+
+data: {"token": " Research"}
+
+data: {"token": " thoroughly"}
+
+data: {"token": ":"}
+
+data: {"sentence": "1. Research thoroughly:", "sentence_source_text": "", "url": ""}
+
+data: {"token": " Research"}
+
+data: {"token": " in"}
+
+data: {"token": "-depth"}
+
+data: {"token": " about"}
+
+data: {"token": " your"}
+
+data: {"token": " destination"}
+
+data: {"token": "."}
+
+data: {"sentence": "Research in-depth about your destination.", "sentence_source_text": "Research thoroughly - Make sure you research in depth about your destination.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Research"}
+
+data: {"token": " about"}
+
+data: {"token": " the"}
+
+data: {"token": " best"}
+
+data: {"token": " budget"}
+
+data: {"token": " hotels"}
+
+data: {"token": ","}
+
+data: {"token": " pocket"}
+
+data: {"token": "-friendly"}
+
+data: {"token": " restaurants"}
+
+data: {"token": ","}
+
+data: {"token": " and"}
+
+data: {"token": " transportation"}
+
+data: {"token": " options"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "Research about the best budget hotels, pocket-friendly restaurants, and transportation options.\n\n", "sentence_source_text": "Research about the best budget hotels, pocket-friendly restaurants, and transportation options.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "2"}
+
+data: {"token": "."}
+
+data: {"token": " Travel"}
+
+data: {"token": " during"}
+
+data: {"token": " off"}
+
+data: {"token": "-season"}
+
+data: {"token": ":"}
+
+data: {"sentence": "2. Travel during off-season:", "sentence_source_text": "", "url": ""}
+
+data: {"token": " It"}
+
+data: {"token": " is"}
+
+data: {"token": " vital"}
+
+data: {"token": " to"}
+
+data: {"token": " travel"}
+
+data: {"token": " during"}
+
+data: {"token": " off"}
+
+data: {"token": "-season"}
+
+data: {"token": ","}
+
+data: {"token": " when"}
+
+data: {"token": " the"}
+
+data: {"token": " demand"}
+
+data: {"token": " is"}
+
+data: {"token": " less"}
+
+data: {"token": " and"}
+
+data: {"token": " prices"}
+
+data: {"token": " are"}
+
+data: {"token": " not"}
+
+data: {"token": " inflated"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "It is vital to travel during off-season, when the demand is less and prices are not inflated.\n\n", "sentence_source_text": "Travel during off-season - If you intend to have a vacation that is easy on your pockets, it is vital to travel during off-season, when the demand is less and prices are not inflated.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "3"}
+
+data: {"token": "."}
+
+data: {"token": " Travel"}
+
+data: {"token": " in"}
+
+data: {"token": " a"}
+
+data: {"token": " group"}
+
+data: {"token": ":"}
+
+data: {"sentence": "3. Travel in a group:", "sentence_source_text": "How can I travel cheap in India?", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Travel"}
+
+data: {"token": " in"}
+
+data: {"token": " a"}
+
+data: {"token": " group"}
+
+data: {"token": " to"}
+
+data: {"token": " share"}
+
+data: {"token": " costs"}
+
+data: {"token": " related"}
+
+data: {"token": " to"}
+
+data: {"token": " accommodation"}
+
+data: {"token": " and"}
+
+data: {"token": " transportation"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "Travel in a group to share costs related to accommodation and transportation.\n\n", "sentence_source_text": "Travel in a group to share costs related to accommodation and transportation.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "4"}
+
+data: {"token": "."}
+
+data: {"token": " Travel"}
+
+data: {"token": " to"}
+
+data: {"token": " off"}
+
+data: {"token": "beat"}
+
+data: {"token": " places"}
+
+data: {"token": ":"}
+
+data: {"sentence": "4. Travel to offbeat places:", "sentence_source_text": "Travel to offbeat places in the country.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Travel"}
+
+data: {"token": " to"}
+
+data: {"token": " un"}
+
+data: {"token": "explo"}
+
+data: {"token": "red"}
+
+data: {"token": " places"}
+
+data: {"token": " and"}
+
+data: {"token": " save"}
+
+data: {"token": " some"}
+
+data: {"token": " bucks"}
+
+data: {"token": "!\n\n"}
+
+data: {"sentence": "Travel to unexplored places and save some bucks!\n\n", "sentence_source_text": "It is wise to travel to unexplored places and save some bucks!", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "5"}
+
+data: {"token": "."}
+
+data: {"token": " Find"}
+
+data: {"token": " accommodation"}
+
+data: {"token": " in"}
+
+data: {"token": " hom"}
+
+data: {"token": "est"}
+
+data: {"token": "ays"}
+
+data: {"token": ":"}
+
+data: {"sentence": "5. Find accommodation in homestays:", "sentence_source_text": "Find accommodation in homestays.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Hom"}
+
+data: {"token": "est"}
+
+data: {"token": "ays"}
+
+data: {"token": " are"}
+
+data: {"token": " relatively"}
+
+data: {"token": " cheaper"}
+
+data: {"token": " than"}
+
+data: {"token": " hotels"}
+
+data: {"token": "."}
+
+data: {"sentence": "Homestays are relatively cheaper than hotels.", "sentence_source_text": "Homestays are relatively cheaper than hotels.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " You"}
+
+data: {"token": " can"}
+
+data: {"token": " also"}
+
+data: {"token": " look"}
+
+data: {"token": " for"}
+
+data: {"token": " accommodation"}
+
+data: {"token": " in"}
+
+data: {"token": " budget"}
+
+data: {"token": "-friendly"}
+
+data: {"token": " host"}
+
+data: {"token": "els"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "You can also look for accommodation in budget-friendly hostels.\n\n", "sentence_source_text": "You can also look for accommodation in budget friendly hostels.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "6"}
+
+data: {"token": "."}
+
+data: {"token": " Travel"}
+
+data: {"token": " via"}
+
+data: {"token": " public"}
+
+data: {"token": " transport"}
+
+data: {"token": ":"}
+
+data: {"sentence": "6. Travel via public transport:", "sentence_source_text": "Travel via public transport instead of taxi/cab.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Travel"}
+
+data: {"token": " via"}
+
+data: {"token": " public"}
+
+data: {"token": " transport"}
+
+data: {"token": " instead"}
+
+data: {"token": " of"}
+
+data: {"token": " taxi"}
+
+data: {"token": "/c"}
+
+data: {"token": "ab"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "Travel via public transport instead of taxi/cab.\n\n", "sentence_source_text": "Travel via public transport instead of taxi/cab.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "India"}
+
+data: {"token": " is"}
+
+data: {"token": " one"}
+
+data: {"token": " of"}
+
+data: {"token": " the"}
+
+data: {"token": " cheapest"}
+
+data: {"token": " destinations"}
+
+data: {"token": " in"}
+
+data: {"token": " the"}
+
+data: {"token": " world"}
+
+data: {"token": " to"}
+
+data: {"token": " travel"}
+
+data: {"token": " to"}
+
+data: {"token": "."}
+
+data: {"sentence": "India is one of the cheapest destinations in the world to travel to.", "sentence_source_text": "India is one of the cheapest destinations in the world to travel to.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " However"}
+
+data: {"token": ","}
+
+data: {"token": " the"}
+
+data: {"token": " safety"}
+
+data: {"token": " of"}
+
+data: {"token": " women"}
+
+data: {"token": " is"}
+
+data: {"token": " a"}
+
+data: {"token": " matter"}
+
+data: {"token": " of"}
+
+data: {"token": " grave"}
+
+data: {"token": " concern"}
+
+data: {"token": " in"}
+
+data: {"token": " the"}
+
+data: {"token": " country"}
+
+data: {"token": "."}
+
+data: {"sentence": "However, the safety of women is a matter of grave concern in the country.", "sentence_source_text": "Having said that, the safety of women is a matter of grave concern in the country.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " If"}
+
+data: {"token": " you"}
+
+data: {"token": "'re"}
+
+data: {"token": " a"}
+
+data: {"token": " solo"}
+
+data: {"token": " female"}
+
+data: {"token": " traveler"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": ","}
+
+data: {"token": " it"}
+
+data: {"token": " is"}
+
+data: {"token": " suggested"}
+
+data: {"token": " to"}
+
+data: {"token": " take"}
+
+data: {"token": " precaution"}
+
+data: {"token": "ary"}
+
+data: {"token": " measures"}
+
+data: {"token": "."}
+
+data: {"sentence": "If you're a solo female traveler in India, it is suggested to take precautionary measures.", "sentence_source_text": "If you\u2019re a solo female traveler in India, we suggest you take precautionary measures.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Carry"}
+
+data: {"token": " a"}
+
+data: {"token": " pepper"}
+
+data: {"token": " spray"}
+
+data: {"token": " or"}
+
+data: {"token": " Swiss"}
+
+data: {"token": " knife"}
+
+data: {"token": " with"}
+
+data: {"token": " you"}
+
+data: {"token": " at"}
+
+data: {"token": " all"}
+
+data: {"token": " times"}
+
+data: {"token": "."}
+
+data: {"sentence": "Carry a pepper spray or Swiss knife with you at all times.", "sentence_source_text": "Carry a pepper spray or Swiss knife with you at all times.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " The"}
+
+data: {"token": " crime"}
+
+data: {"token": " levels"}
+
+data: {"token": " are"}
+
+data: {"token": " moderate"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "The crime levels are moderate in India.\n\n", "sentence_source_text": "The crime levels are moderate in India.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "The"}
+
+data: {"token": " cost"}
+
+data: {"token": " of"}
+
+data: {"token": " a"}
+
+data: {"token": " meal"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": " varies"}
+
+data: {"token": " from"}
+
+data: {"token": " IN"}
+
+data: {"token": "R"}
+
+data: {"token": " "}
+
+data: {"token": "100"}
+
+data: {"token": " at"}
+
+data: {"token": " street"}
+
+data: {"token": " joints"}
+
+data: {"token": " to"}
+
+data: {"token": " IN"}
+
+data: {"token": "R"}
+
+data: {"token": " "}
+
+data: {"token": "1"}
+
+data: {"token": ","}
+
+data: {"token": "000"}
+
+data: {"token": " at"}
+
+data: {"token": " upscale"}
+
+data: {"token": " restaurants"}
+
+data: {"token": "."}
+
+data: {"sentence": "The cost of a meal in India varies from INR 100 at street joints to INR 1,000 at upscale restaurants.", "sentence_source_text": "A meal in India costs INR 100 at street joints, INR 250-500 at medium-level restaurants, and over INR 1,000 at upscale restaurants.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " Make"}
+
+data: {"token": " sure"}
+
+data: {"token": " to"}
+
+data: {"token": " taste"}
+
+data: {"token": " the"}
+
+data: {"token": " local"}
+
+data: {"token": " street"}
+
+data: {"token": " food"}
+
+data: {"token": " while"}
+
+data: {"token": " you"}
+
+data: {"token": "'re"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": "."}
+
+data: {"sentence": "Make sure to taste the local street food while you're in India.", "sentence_source_text": "Make sure you taste the local street food while you\u2019re in India.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " The"}
+
+data: {"token": " flavor"}
+
+data: {"token": " and"}
+
+data: {"token": " the"}
+
+data: {"token": " aroma"}
+
+data: {"token": " of"}
+
+data: {"token": " Indian"}
+
+data: {"token": " cuisine"}
+
+data: {"token": " are"}
+
+data: {"token": " distinct"}
+
+data: {"token": " and"}
+
+data: {"token": " usually"}
+
+data: {"token": " hit"}
+
+data: {"token": " all"}
+
+data: {"token": " your"}
+
+data: {"token": " senses"}
+
+data: {"token": ".\n\n"}
+
+data: {"sentence": "The flavor and the aroma of Indian cuisine are distinct and usually hit all your senses.\n\n", "sentence_source_text": "The flavor and the aroma of Indian cuisine is distinct and usually hits all your senses.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": "In"}
+
+data: {"token": " conclusion"}
+
+data: {"token": ","}
+
+data: {"token": " there"}
+
+data: {"token": " are"}
+
+data: {"token": " numerous"}
+
+data: {"token": " budget"}
+
+data: {"token": "-friendly"}
+
+data: {"token": " destinations"}
+
+data: {"token": " to"}
+
+data: {"token": " explore"}
+
+data: {"token": " in"}
+
+data: {"token": " India"}
+
+data: {"token": "."}
+
+data: {"sentence": "In conclusion, there are numerous budget-friendly destinations to explore in India.", "sentence_source_text": "Which are some of the offbeat destinations to plan budget trips in India?", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
+data: {"token": " By"}
+
+data: {"token": " keeping"}
+
+data: {"token": " in"}
+
+data: {"token": " mind"}
+
+data: {"token": " the"}
+
+data: {"token": " tips"}
+
+data: {"token": " mentioned"}
+
+data: {"token": " above"}
+
+data: {"token": ","}
+
+data: {"token": " one"}
+
+data: {"token": " can"}
+
+data: {"token": " easily"}
+
+data: {"token": " plan"}
+
+data: {"token": " a"}
+
+data: {"token": " budget"}
+
+data: {"token": " trip"}
+
+data: {"token": " to"}
+
+data: {"token": " India"}
+
+data: {"token": "."}
+
+data: {"token": ""}
+
+data: {"sentence": " By keeping in mind the tips mentioned above, one can easily plan a budget trip to India.", "sentence_source_text": "Keeping these tips in mind would surely aid you while planning your ideal budget trip in India.", "url": "https://traveltriangle.com/blog/budget-trips-in-india/"}
+
